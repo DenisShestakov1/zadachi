@@ -1,0 +1,10 @@
+def average_positive_numbers():
+    numbers = [int(input("Введите число: ")) for _ in range(5)]
+    positive_numbers = [num for num in numbers if num > 0]
+    if positive_numbers:
+        average = sum(positive_numbers) / len(positive_numbers)
+        print("Среднее арифметическое положительных элементов:", average)
+    else:
+        print("Нет положительных чисел")
+
+average_positive_numbers()
