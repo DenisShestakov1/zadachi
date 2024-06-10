@@ -1,0 +1,9 @@
+def max_absolute_value():
+    numbers = [int(input("Введите число: ")) for _ in range(5)]
+    max_abs = numbers[0]
+    for num in numbers:
+        if abs(num) > abs(max_abs):
+            max_abs = num
+    print("Максимальное по модулю число:", max_abs)
+
+max_absolute_value()
