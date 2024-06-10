@@ -1,0 +1,10 @@
+def product_of_numbers():
+    numbers = []
+    product = 1
+    for _ in range(5):
+        number = float(input("Введите число: "))
+        numbers.append(number)
+        product *= number
+    print("Произведение чисел:", product)
+
+product_of_numbers()
